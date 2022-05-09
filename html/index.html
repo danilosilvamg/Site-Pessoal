@@ -1,0 +1,81 @@
+<html>
+
+<head>
+
+  <title>Danilo Silva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+  <header>
+
+     <div>
+       <img src="../imagem/logo_size_mini1.jpg" alt="Logo Danilo Silva">
+     </div>
+
+     <ul>
+       <li>
+         <a target="_blank" href="https://www.linkedin.com/in/danilo-silva-03ab25a8/">linkedin</a>
+       </li>
+       <li>
+         <a target="_blank" href="mailto:danilo.net2OO9@gmail.com.br/">email</a>
+       </li>
+       <li>
+         <a target="_blank" href="https://wa.me/35988752025">whatsapp</a>
+       </li>
+     </ul>
+
+ </header>
+
+  <main>
+
+    <section class="container">
+
+      <div class="name">
+         <h1>Danilo Silva</h1>
+         <h5>Front-end Developer</h5>
+      </div>
+
+      <div onclick="displayAbout()" id="arrow">
+        <i id="animation" class="fa-solid fa-sort-down"></i>
+      </div>
+
+      <div style="display: none;" id="about">
+        <p>
+             Densenvolvedor Full stack formado pela hiring corders 3° Edicao.
+        </p>
+       </div>
+       
+       <div class="form">
+            <div>
+                <p>deixe seu contato!</p>
+            </div>
+
+            <form action="">
+                <input type="email" placeholder="seu melhor email :]" required>
+                <button>enviar</button>
+            </form>
+       </div>
+
+    </section>
+
+  </main>
+
+  <script>
+    function displayAbout(){
+      var arrow = document.getElementById('animation');
+      arrow.classList.toggle('rotate');
+      var display = document.getElementById('about');
+      display.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
